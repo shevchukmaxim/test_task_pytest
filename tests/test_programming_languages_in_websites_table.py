@@ -28,7 +28,9 @@ def test_popularity_value_is_more_than_expected(min_popularity, page):
     for row in rows:
         popularity = row.get_popularity_as_int()
         if popularity < min_popularity:
-            error_message = f"{row.websites} (Frontend:{row.frontend}|Backend:{row.backend}) has {popularity} unique visitors per month. (Expected more than {min_popularity})"
+            error_message = f"{row.websites} (Frontend:{row.frontend}|Backend:{row.backend}) has {popularity} " \
+                            f"unique visitors per month. (Expected more than {min_popularity})"
             errors.append(error_message)
 
-    assert not errors, "\n".join(errors)
+    if errors:
+        pytest.fail("\n".join(errors), pytrace=False)
