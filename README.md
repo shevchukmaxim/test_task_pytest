@@ -7,12 +7,11 @@
 - When implementing the test, it should be considered that the data from this table may be needed in other tests as well. It would be a plus to implement storing the data from the table as data classes.
 
 ### Install
-Pytest
 ```console
 python -m pip install -r requirements.txt
 ```
 
-### How to
+### How to run
 To run this project run this command:
 
 ```console
