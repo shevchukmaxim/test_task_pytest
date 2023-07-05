@@ -1,0 +1,25 @@
+# Pytest
+__pycache__/
+*.pyc
+*.pyo
+*.pytest_cache/
+test-reports/
+
+# Python virtual environment
+venv/
+env/
+
+# Editor/IDE files
+.vscode/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+.idea/
+*.pyc
+*.swo
+*.swp
+*~
+
+# Miscellaneous
+*.log
+.DS_Store
